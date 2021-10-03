@@ -43,6 +43,4 @@ private
       "https://community-open-weather-map.p.rapidapi.com/forecast?q=#{query}"
     )
   end
-
-
 end
