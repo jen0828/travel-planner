@@ -13,7 +13,7 @@ class TravelController < ApplicationController
   @country = countries.first
   @weather = find_weather(@country['capital'], @country['alpha2Code'])
   end
-  
+
 private
 
   def request_api(url)
@@ -35,4 +35,14 @@ private
       "https://restcountries-v1.p.rapidapi.com/name/#{URI.encode(name)}"
     )
   end
+
+  def find_weather(city, country_code)
+    query = URI.encode("#{city},#{country_code}")
+
+    request_api(
+      "https://community-open-weather-map.p.rapidapi.com/forecast?q=#{query}"
+    )
+  end
+
+
 end
