@@ -8,8 +8,12 @@ class TravelController < ApplicationController
     unless countries
       flash[:alert] = 'country not found'
       return render action: :index
-  end
+    end
 
+  @country = countries.first
+  @weather = find_weather(@country['capital'], @country['alpha2Code'])
+  end
+  
 private
 
   def request_api(url)
