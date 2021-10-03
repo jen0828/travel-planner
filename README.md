@@ -1,24 +1,16 @@
-# README
+# travel planner
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ This simple travel planner app allows the user to enter a country of destination and will show them some key details about it (the currency, timezone, etc), plus some weather information using multiple APIs.
 
-Things you may want to cover:
+ How to clone the repo:
+ ```
+ $ git clone https://github.com/jen0828/travel-planner.git
+ $ cd travel-planner
+ $ bundle install
+ $ rails server # Start the server at localhost:3000
+ ```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ Tech used:
+ * Ruby
+ * Ruby on Rails
+ * Ruby gem - excon
