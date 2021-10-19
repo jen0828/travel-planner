@@ -1,13 +1,14 @@
 # travel planner
 
- This simple travel planner app allows the user to enter a country of destination and will show them some key details about it (the currency, timezone, etc), plus some weather information using multiple APIs.
+ Practice for multiple APIs with rails application. This simple travel planner app allows the users to enter a country of destination, and it will show them some key details (the currency, timezone, etc.), plus some weather information.
 
  How to clone the repo:
  ```
  $ git clone https://github.com/jen0828/travel-planner.git
  $ cd travel-planner
  $ bundle install
- $ rails server # Start the server at localhost:3000
+ $ RAPIDAPI_API_KEY=your_api_key_here rails server
+ # Start the server at localhost:3000
  ```
 
  Tech used:
